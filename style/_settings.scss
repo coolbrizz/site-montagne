@@ -1,0 +1,31 @@
+$color1 : pink;
+$color2:blue;
+@font-face {
+    font-family: "font1";
+    src: url(/style/Font/inter-extra-bold.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(/style/Font/Merriweather-Regular.ttf);
+}
+
+@mixin center {
+    display: flex;justify-content: center;align-items: center;
+}
+*{
+    padding: 0;margin: 0;
+}
+body{
+    background-image: url(/images/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: -10%;
+}
+img{
+    height: 300px;
+}
+h1,h2,label,h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "font1";
+}

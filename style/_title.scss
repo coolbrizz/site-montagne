@@ -1,0 +1,27 @@
+.containerTitle{
+    text-align: center;
+    h1{
+        font-size: 4rem;
+        color: white;
+        text-transform: uppercase;
+        font-family: "font1";
+        padding-top: 200px;
+        letter-spacing: 10px;
+    }
+    p{
+        color: white;
+        font-style: normal;
+        padding-top: 60px;
+        font-family: "font2";
+        padding-bottom: 100px;
+    }
+    a{
+        margin-top: 100px;      
+        border : solid 2px white;
+        padding: 10px;
+        border-radius: 500px;
+    }
+    i{
+        color: white;
+}
+}
