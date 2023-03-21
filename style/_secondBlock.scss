@@ -1,0 +1,27 @@
+.Footer{
+background: white;
+display: flex;
+
+    .containerContact{
+        display: grid;
+        justify-content: center;
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+            input{
+                padding: 10px;
+            }
+            textarea{
+                padding: 10px;
+            }
+    }
+    .containerFooter{
+        width: 50%;
+    }
+    p{
+        text-align: left;
+     }
+}
+.vide{
+    height: 50px;
+}

@@ -39,41 +39,45 @@
             <div class="firstArticle">
                 <h2>And this is a massive headline</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusantium quo saepe inventore qui mollitia ipsum possimus delectus fuga. Repudiandae atque eligendi quisquam eius nostrum!</p>
-                <img src="/images/pic01.jpg" alt="Image de Présentation de la montagne">
-                <button>Full story</button>
+                <div class="containerImg">
+                    <img src="/images/pic01.jpg" alt="Image de Présentation de la montagne">
+                    <button>Full story</button>
+                </div>
             </div>
             <div class="secondArticle">
-                <div class="containerSecondArticle">
-                    <h2>And this is a massive headline</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusantium quo saepe inventore qui mollitia ipsum possimus delectus fuga. Repudiandae atque eligendi quisquam eius nostrum!</p>
+                <div>
+                    <span class="data">24 avril 2017</span>
+                    <h2>Sed magna ipsum faucibus</h2>
                     <img src="/images/pic02.jpg" alt="Image de Présentation de la montagne">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusantium quo saepe inventore qui mollitia ipsum possimus delectus fuga. Repudiandae atque eligendi quisquam eius nostrum!</p>                   
                     <button>Full story</button>
                 </div>
                 <div class="containerSecondArticle">
-                    <h2>And this is a massive headline</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusantium quo saepe inventore qui mollitia ipsum possimus delectus fuga. Repudiandae atque eligendi quisquam eius nostrum!</p>
+                    <span class="data" >22 avril 2017</span>
+                    <h2>Primis eget imperdiet lorem</h2>
                     <img src="/images/pic03.jpg" alt="Image de Présentation de la montagne">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusantium quo saepe inventore qui mollitia ipsum possimus delectus fuga. Repudiandae atque eligendi quisquam eius nostrum!</p>
                     <button>Full story</button>
                 </div>
             </div>
         </div>
+        <div class="vide">
+        </div>
         <div class="Footer">
             <div class="containerContact">
-                <div >
-                    <label for="lname">Nom*</label>
-                    <input type="text"id="lname" placeholder="Entrez votre nom" required>
+                <div class="input">
+                    <p>Nom</p>
+                    <input type="text"id="lname" required>
                 </div>
-                <div>
-                    <label for="email">Email*</label>
-                    <input type="email"id="email" placeholder="Entrez une adresse mail " required>
-                </div>                                     
-                <fieldset>
-                    <legend>Votre message</legend>
-                    <div>
-                        <textarea name="message" id="message" rows="5"placeholder="Ecrivez votre message">
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email"id="email" required>
+                </div >                                     
+                    <div class="input">
+                        <p>Message</p>
+                        <textarea name="message" id="message" rows="5">
                         </textarea>
                     </div>
-                </fieldset>
                 <button type="submit">ENVOYER</button>
 
             </div>
