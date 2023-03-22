@@ -3,6 +3,9 @@
     margin-left: 150px;
     margin-right: 150px;
     padding-top: 100px;
+    @media screen and (max-width: 650px){
+        margin: 0;padding: 0;
+    }
 }
 button{
     margin: auto;
@@ -23,6 +26,10 @@ button{
         line-height: 40px;
         font-style: italic;
         color:rgba(0, 0, 0, 0.716) ;
+        @media screen and (max-width: 650px){
+            width : 100%;
+            padding: 10px;
+        }
 }}
     .date{
         padding:60px 0px;
@@ -54,6 +61,10 @@ h2 {margin: auto;
     width : 60%;
     font-family: "font1";
     letter-spacing: 10px;
+    @media screen and (max-width: 650px){
+        width:100%;
+        font-size : 2em;
+    }
 }
 
 }
@@ -64,10 +75,20 @@ h2 {margin: auto;
     width : 800px;
     padding: 0px 50px;
     padding-bottom: 50px;
+    @media screen and (max-width: 1250px){
+        width : 80%;
+        margin: auto;
+    }
 }
 
 }
 .secondArticle{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    @media screen and (max-width: 1250px){
+        flex-direction: column;
+    }
     .data{
         padding:60px 0px;
         font-family: "font2";
@@ -75,9 +96,7 @@ h2 {margin: auto;
         font-style: italic;
         color:rgba(0, 0, 0, 0.716)
     }
-    display: flex;
-    justify-content: center;
-    padding: 50px 0px;
+
     h2{
         margin: auto;
     font-size: 1.5rem;
@@ -89,9 +108,13 @@ h2 {margin: auto;
     }
     img{
         width: 400px;
+        @media screen and (max-width: 1250px){
+            width : 80%;
+            margin: auto;
+        }
     }
     p{
-        width: 400px;
+        width: 80%;
         margin: auto;
         padding: 40px;
         line-height: 30px;

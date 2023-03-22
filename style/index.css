@@ -35,6 +35,11 @@ h1, h2, label, h5 {
   padding-top: 200px;
   letter-spacing: 10px;
 }
+@media screen and (max-width: 650px) {
+  .containerTitle h1 {
+    font-size: 3em;
+  }
+}
 .containerTitle p {
   color: white;
   font-style: normal;
@@ -56,6 +61,12 @@ h1, h2, label, h5 {
   margin-left: 150px;
   margin-right: 150px;
   padding-top: 100px;
+}
+@media screen and (max-width: 650px) {
+  .containerView {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 button {
@@ -80,6 +91,12 @@ button {
   line-height: 40px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.716);
+}
+@media screen and (max-width: 650px) {
+  .blocArticle .firstArticle p {
+    width: 100%;
+    padding: 10px;
+  }
 }
 .blocArticle .date {
   padding: 60px 0px;
@@ -112,6 +129,12 @@ button {
   font-family: "font1";
   letter-spacing: 10px;
 }
+@media screen and (max-width: 650px) {
+  .blocArticle h2 {
+    width: 100%;
+    font-size: 2em;
+  }
+}
 
 .containerImg {
   display: grid;
@@ -123,11 +146,22 @@ button {
   padding: 0px 50px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 1250px) {
+  .containerImg img {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 .secondArticle {
   display: flex;
   justify-content: center;
   padding: 50px 0px;
+}
+@media screen and (max-width: 1250px) {
+  .secondArticle {
+    flex-direction: column;
+  }
 }
 .secondArticle .data {
   padding: 60px 0px;
@@ -148,8 +182,14 @@ button {
 .secondArticle img {
   width: 400px;
 }
+@media screen and (max-width: 1250px) {
+  .secondArticle img {
+    width: 80%;
+    margin: auto;
+  }
+}
 .secondArticle p {
-  width: 400px;
+  width: 80%;
   margin: auto;
   padding: 40px;
   line-height: 30px;
@@ -192,6 +232,11 @@ button {
   padding: 21px 9px;
 }
 
+@media screen and (max-width: 800px) {
+  .icone {
+    display: none;
+  }
+}
 .icone i {
   font-size: 1.2em;
   padding-left: 10px;
@@ -199,27 +244,77 @@ button {
 }
 
 .Footer {
-  background: white;
+  margin: auto;
+  background: rgb(240, 240, 240);
   display: flex;
+  color: rgba(0, 0, 0, 0.716);
+}
+@media screen and (max-width: 1200px) {
+  .Footer {
+    display: block;
+  }
 }
 .Footer .containerContact {
-  display: grid;
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 50%;
-  text-align: left;
-  padding: 20px;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  margin: 0;
+}
+.Footer .containerContact p {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-family: "font1";
+  letter-spacing: 5px;
+  font-size: 0.8rem;
 }
 .Footer .containerContact input {
   padding: 10px;
+  background: rgb(240, 240, 240);
+  border: solid 1px rgba(0, 0, 0, 0.317);
 }
 .Footer .containerContact textarea {
   padding: 10px;
+  background: rgb(240, 240, 240);
+  border: solid 1px rgba(0, 0, 0, 0.317);
 }
 .Footer .containerFooter {
-  width: 50%;
+  flex-grow: 2;
 }
-.Footer p {
-  text-align: left;
+.Footer .containerFooter .renseignement {
+  border-left: solid 1px rgba(0, 0, 0, 0.317);
+  border-top: solid 1px rgba(0, 0, 0, 0.317);
+  display: flex;
+  flex-direction: row;
+}
+.Footer .containerFooter .renseignement ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+@media screen and (max-width: 500px) {
+  .Footer .containerFooter .renseignement ul {
+    flex-wrap: wrap;
+  }
+}
+.Footer .containerFooter .renseignement li {
+  padding: 10px 10px;
+  margin: 0px 10px;
+  border: solid 1px rgba(0, 0, 0, 0.317);
+  border-radius: 100%;
+  text-align: center;
+  transform: translateY(-10px);
+}
+.Footer .containerFooter .renseignement h5 {
+  padding: 50px;
+}
+.Footer .containerFooter .renseignement p {
+  padding-top: 50px;
 }
 
 .vide {

@@ -30,6 +30,9 @@
     }
 }
 .icone{
+    @media screen and (max-width: 800px){
+        display: none;
+    }
 i{
 font-size: 1.2em;
 padding-left: 10px;
